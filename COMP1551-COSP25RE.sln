@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
+VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP1551-COSP25RE", "COMP1551-COSP25RE\COMP1551-COSP25RE.csproj", "{3047C9E4-2A9C-4BC4-AB19-0BBC30229BD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagementSystemBasic", "ContactManagementSystemBasic\ContactManagementSystemBasic.csproj", "{92683972-229F-48BD-816B-D74423ECC508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagementSystemOOP", "ContactManagementSystemOOP\ContactManagementSystemOOP.csproj", "{F1F8496F-5947-404C-9CAA-895B2E38892C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{92683972-229F-48BD-816B-D74423ECC508}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92683972-229F-48BD-816B-D74423ECC508}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92683972-229F-48BD-816B-D74423ECC508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F8496F-5947-404C-9CAA-895B2E38892C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F8496F-5947-404C-9CAA-895B2E38892C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F8496F-5947-404C-9CAA-895B2E38892C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F8496F-5947-404C-9CAA-895B2E38892C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

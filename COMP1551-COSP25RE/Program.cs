@@ -6,10 +6,80 @@ using System.Threading.Tasks;
 
 namespace COMP1551_COSP25RE
 {
+    class Contact
+    {
+        // fields
+        private string email;
+
+        // properties
+        private string Name { get; set; }
+        private string PhoneNumber { get; set; }
+        private string Email
+        {
+            get
+            {
+                return email;
+            }
+            set
+            {
+                // validate email
+                if (value.Contains("@"))
+                {
+                    email = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid email. Please enter a valid email address.");
+                }
+            }
+        }
+
+        // constructor
+        public Contact(string name, string phoneNumber, string email)
+        {
+            Name = name;
+            PhoneNumber = phoneNumber;
+            Email = email;
+        }
+
+        // methods
+        public void Display()
+        {
+            Console.WriteLine($"Name: {Name.ToUpper()}, Phone Number: {PhoneNumber}, Email: {Email}");
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
         {
+
+            /*
+             * Example 10: Classes and Objects
+             */
+
+            try
+            {
+                Contact contact1 = new Contact("john doe", "+84112345678", "john@dev.com");
+                //contact1.Name = "John Doe"; // [Error] Property or indexer 'Contact.Name' cannot be assigned to -- it is read only
+                //contact1.PhoneNumber = "+84112345678"; // [Error] Property or indexer 'Contact.PhoneNumber' cannot be assigned to -- it is read only
+                //contact1.Email = "john@dev.com"; // [Error] Property or indexer 'Contact.Email' cannot be assigned to -- it is read only
+
+
+                contact1.Display();
+
+                Contact contact2 = new Contact("Jane Doe", "+84123456789", "jane@dev.com");
+                //contact2.Name = "Jane Doe";
+                //contact2.PhoneNumber = "+84123456789";
+                //contact2.Email = "jane@dev.com";
+
+                contact2.Display();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Something went wrong.");
+                Console.WriteLine(e.Message);
+            }
+
             /*
              * Example 1: Output
              * See more: https://www.w3schools.com/cs/cs_output.php
@@ -185,20 +255,18 @@ namespace COMP1551_COSP25RE
             //x[5] = 60;
 
             // Method 2
-            int[] x = new int[] { 10, 20, 30, 40, 50, 60 };
+            //int[] x = new int[] { 10, 20, 30, 40, 50, 60 };
 
-            //Console.WriteLine($"x[0]: {x[0]}");
-            //Console.WriteLine($"x[1]: {x[1]}");
-            //Console.WriteLine($"x[2]: {x[2]}");
-            //Console.WriteLine($"x[3]: {x[3]}");
-            //Console.WriteLine($"x[4]: {x[4]}");
+            ////Console.WriteLine($"x[0]: {x[0]}");
+            ////Console.WriteLine($"x[1]: {x[1]}");
+            ////Console.WriteLine($"x[2]: {x[2]}");
+            ////Console.WriteLine($"x[3]: {x[3]}");
+            ////Console.WriteLine($"x[4]: {x[4]}");
 
-            for (int i = 0; i < x.Length; i++)
-            {
-                Console.WriteLine($"x[{i}]: {x[i]}");
-            }
-
-
+            //for (int i = 0; i < x.Length; i++)
+            //{
+            //    Console.WriteLine($"x[{i}]: {x[i]}");
+            //}
 
 
 
